@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+<title>Contact Us</title>
+<style>
+form {
+	text-align: center;
+	background-color: #ccddcc;
+	height: 500px;
+}
+.Required {
+	font-weight: bold;
+}
+.restaurantName {
+	background-color: #ccddcc;
+}
+input[type="text"] {
+	margin: 10px 10px;
+	align: center;
+	padding-top: 10px;
+	padding-bottom: 5px; 
+	
+} 
+label{
+	margin-right: 5px;
+}
+textarea {
+	height: 100px;
+	margin-right: 80px;
+	width: 200px;
+	float: top;
+}
+input[type="submit"] {
+	padding: 5px 5px;
+	margin-top: 20px;
+}
+select {
+	width: 180px;
+	padding: 5px;
+	margin-bottom: 10px;
+	margin-right: 80px;
+}
+#radio {
+	margin: 20px 240px 10px 0;
+}
+input[type="checkbox"] {
+	margin: 20px 10px; 
+}
+
+</style>
+</head>
+<body>
+	<h1 class="restaurantName"><b>Roscoe's Chicken & Waffles</b></h1>
+	<hr />
+	<!--The links we'll need are: homePage.html, restaurantMenu.html, and restaurantContactUs.html -->
+		<p id="navigation"><a href="homePage.html" target="_blank">Home</a> 
+		<a href="restaurantMenu.html" target="_blank">Menu</a>
+		<a href="restaurantContactUs.html" target="_blank">Contact Us</a>
+		</p>
+	<hr />
+			<form action="submit.html" method="POST">
+				
+				<label class="Required" for="name">Name:</label>
+				<input type="text" id="name" name="name" required><br />
+				<label class="Required" for="email">Email:</label>
+				<input type="text" id="email" name="email" required><br />
+				<label class="Required" for="phone">Phone:</label>
+				<input type="text" id="phone" name="phone" required><br />
+				<label class="Required" for="contact">Reason for Inquiry:</label>
+				<select id="contact" name="contact" required>
+						<option value="default" selected>Catering</option>
+						<option value="privateParty">Private Party</option>
+						<option value="feedback">Feedback</option>
+						<option value="other">Other</option>
+				</select>
+				<br />
+				
+				<label class="info" for="info">Additional Information:</label>
+					<textarea id="info"></textarea><br />
+				
+					<div id="radio">
+					<label class="Required">Have you been to the restaurant?</label>
+						<input type="radio" id="choice1" name="questionnaire" value="no" checked>
+							<label for="choice1">No</label>
+						<input type="radio" id="choice2" name="questionnaire" value="yes">
+							<label for="choice2">Yes</label> <br />
+					</div>
+					<label class="Required">Best day to contact you:</label>
+					<input type="checkbox" id="monday" name="interest" value="monday">
+					<label for="monday">M</label>		
+					<input type="checkbox" id="tuesday" name="interest" value="tuesday">
+					<label for="tuesday">T</label>
+					<input type="checkbox" id="wednesday" name="interest" value="wednesday">
+					<label for="wednesday">W</label>
+					<input type="checkbox" id="thursday" name="interest" value="thursday">
+					<label for="thursday">Th</label>
+					<input type="checkbox" id="friday" name="interest" value="friday">
+					<label for="friday">F</label><br/>
+				<input type="submit" name="submit" value="Send Request">
+			</form>
+		<hr />
+<footer><p>1 Main St, Dover, New Hampshire, 12345<br />
+		<br/>
+		1-603-867-5309</p></footer>
+</body>
+</html>
