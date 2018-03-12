@@ -1,0 +1,59 @@
+@font-face {
+      font-family: GruenLemonograf;
+      src: url(GruenLemonograf.ttf);
+      }
+.homePage {
+	background-color: #ccddcc;
+	margin: 0 auto;
+	height: 400px;
+}
+.headTitle {
+	background-color: #ccddcc;
+	display: block;
+}
+h1 {
+	text-align: center;
+	font-family: ‘GruenLemonograf’, 'Comic Sans MS', cursive;
+	margin: 0 0 0 0;
+}
+
+hr {
+margin: 0;
+}
+
+footer {
+	font-weight: bold;
+	font-size: 18px;
+	position: relative;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+}
+
+#description {
+	text-align: center;
+	display: block;
+	border: 1px solid black;
+	font-size: 20px;
+	padding: 10px 10px 0 10px;
+	margin: 0 auto 0 auto;
+	background-color: white;
+	width: 450px;
+	height: 200px;
+}
+
+ul {
+	background-color: #888888;
+}
+
+a:visited {
+	color: #f3aaee;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+a:active {
+	text-decoration: none;
+}
