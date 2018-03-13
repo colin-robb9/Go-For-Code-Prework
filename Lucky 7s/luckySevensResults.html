@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lucky Sevens</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="luckySevens.js"></script>
+	<link href="luckySevenStylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="hideResults()">
+<div id="LuckySevens">
+    <h1>Lucky Sevens</h1>
+		<div class="col-md-12">
+    <span>Starting Bet:<input type="number" name="Starting Bet" id="startingBetInput" placeholder="$0.00"></span>
+        <br/>
+            <button onclick="play()" id="playButton">Play</button>
+        </form>
+		</div>
+    </div>
+    <div id="resultsTable">
+		<div class="col-md-12">
+		<hr />
+        <table>
+        <caption><h2>Results</h2></caption>
+            <tr class="first">
+                <th>Starting Bet</th>
+                <th id="moneyStart"></th>
+            </tr>
+            <tr class="even">
+                <td>Total Rolls Before Going Broke</td>
+                <td id="countRolls"></td>
+            </tr>
+            <tr id="odd">
+                <td>Highest Amount Won</td>
+                <td id="maxMoney"></td>
+            </tr>
+            <tr class="even">
+                <td>Roll Count at Highest Amount Won</td>
+                <td id="countRollsAtMaxMoney"></td>
+            </tr>
+        </table>
+		</div>
+    </div>
+</body>
+</html>

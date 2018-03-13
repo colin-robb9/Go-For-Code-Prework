@@ -1,0 +1,79 @@
+@font-face {
+      font-family: GruenLemonograf;
+      src: url(GruenLemonograf.ttf);
+      }
+
+h1 {
+	font-family: ‘GruenLemonograf’, 'Comic Sans MS', cursive;
+	margin: 300px auto 0 auto;
+	text-align: center;
+}
+
+.LuckySevens {
+	margin: 40px auto 40px auto;
+	text-align: center;
+}
+
+button {
+	border-right: 5px solid black; 
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 3px solid black;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 100px;
+}
+
+body {
+	background-color: #cccccc;
+	text-align: center;
+}
+
+input[type="number"] {
+	text-align: center;
+	width: 80px;
+	border: 2px solid black;
+	margin-left: 15px;
+	margin-top: 20px;
+}
+
+.first {
+	background-color: #cccccc;
+}
+
+.even {
+	background-color: #eee;
+}
+
+#odd {
+	background-color: white;
+}
+
+table {
+	border: 2px solid black;
+	width: 500px;
+	height: 300px;
+	font-weight: bold;
+	margin: 0 auto 0 auto;
+}
+
+table th {
+	border-right: 2px solid black;
+	padding-left: 5px;
+}
+
+table td {
+	border-right: 2px solid black;
+	padding-left: 5px;
+	text-align: left;
+}
+
+h2 {
+	font-family: ‘GruenLemonograf’, 'Comic Sans MS', cursive;
+	text-align: center;
+	margin-bottom: 20px;
+}
+hr {
+	border: 2px solid black;
+	width: 500px;
+}
